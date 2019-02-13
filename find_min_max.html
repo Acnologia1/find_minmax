@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //
+    var array =[[26,94,40,40,80,85,74,6,6,87],
+        [91,86,21,79,72,77,71,99,45,5],
+        [5,35,49,38,10,97,39,14,62,91],
+        [42,7,31,94,38,28,6,76,78,94]];
+    //tìm 1 phần tử
+    function lineSearch(arr,number) {
+        for(let i in arr){
+            for(let j in arr)
+            if(arr[i] == number){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    function find_max(max, arr) {
+        max = arr[0];
+        for (let i in array) {
+            if (array[i] > max) {
+                array[i] = max;
+            }
+            return max;
+        }
+    }
+
+    function find_min(min,arrray) {
+        min = array[0];
+        for(let i in array){
+            if(array[i] < min){
+                array[i] = min;
+            }
+        return min;
+    }
+    }
+</script>
+</body>
+</html>
